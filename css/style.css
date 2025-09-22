@@ -5,11 +5,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  background: linear-gradient(135deg, #081D30 0%, #1B3E66 100%);
 }
 
 header {
-  background-color: #081d30;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,6 @@ header img {
 #Hero {
   margin-top: 0;
   color: white;
-  background-color: #081d30;
   height: 80vh;
 }
 
