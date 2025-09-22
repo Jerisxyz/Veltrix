@@ -85,3 +85,7 @@ header img {
   line-height: 1.2;
   word-break: break-word;
 }
+
+.animate__pulse {
+  --animate-duration: 2s; /* Por defecto es 1s */
+}
