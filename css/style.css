@@ -14,7 +14,11 @@ header {
   display: flex;
   align-items: center;
   padding: 0 40px;                  
-  height: 80px;                     
+  height: 80px;     
+  background-color: #081d30;
+  position: sticky; /* Se "pega" cuando llega al top */
+  top: 0;           /* Distancia desde el borde superior */
+  z-index: 1000;    /* Asegura que quede encima de otros elementos */            
 }
 
 header img {
@@ -27,7 +31,8 @@ nav {
   top: 50%;
   transform: translate(-50%, -50%); 
   display: flex;
-  gap: 40px;                        
+  gap: 40px;     
+                   
 }
 
 
