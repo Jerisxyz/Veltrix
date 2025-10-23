@@ -13,7 +13,7 @@ header {
   position: relative;             
   display: flex;
   align-items: center;
-  padding: 0 40px;                  
+  padding: 0px;                  
   height: 80px;     
   background-color: #081d30;
   position: sticky; /* Se "pega" cuando llega al top */
@@ -22,7 +22,11 @@ header {
 }
 
 header img {
-  max-width: 160px;                 
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  margin-left: 0;     /* asegúrate que no tenga espacio */
+  padding-left: 0;                 
 }
 
 nav {
@@ -63,6 +67,34 @@ nav a:hover::after {
   width: 100%; /* Se expande hasta cubrir todo el enlace */
 }
 
+/* Botón menú hamburguesa (oculto por defecto) */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* --- Responsive para celular --- */
+@media (max-width: 768px) {
+  .logo {
+    display: none; /* Oculta el menú */
+  }
+
+  .menu-btn {
+    display: block; /* Muestra el icono ☰ */
+    padding: 0 20px;
+  }
+
+  .logo {
+    height: 30px; /* Ajusta tamaño del logo */
+  }
+
+  .brand {
+    font-size: 16px; /* Texto un poco más pequeño */
+  }
+}
+
 header img {
   display: flex;
   flex-direction: column;
@@ -76,13 +108,17 @@ header img {
 }
 
 #Hero {
+   
+ 
   margin-top: 0;
   color: white;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 
 
 
@@ -108,7 +144,7 @@ header img {
 text-align: center;
 color: white;
 padding: 30px;
-height: 100vh;
+height: 125vh;
 }
 
 #About h1{
@@ -140,13 +176,33 @@ height: 100vh;
   
 }
 
+/* Espaciado general entre textos */
+h1, h2, h3, p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Limita el ancho del contenido y centra */
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Espaciado adicional entre secciones */
+section + section {
+  margin-top: 50px;
+}
+
 
 #About .container img{
   
   width: 80px;
   aspect-ratio: 1/1;
   object-fit: contain;
-  
+  line-height: 1.6;
+  margin-bottom: 20px
   
 }
 
@@ -154,7 +210,7 @@ height: 100vh;
   text-align: center;
   padding: 30px;
   color: white;
-  height: 60vh;
+  height: 70vh;
 }
 
 #projects h1{
