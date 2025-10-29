@@ -124,29 +124,58 @@ nav a:hover::after {
 
 /* --- HERO --- */
 #Hero {
+  
+  border: 0;
+  padding: 0;
   margin-top: 0;
+  width: 1400px;;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  
+
 }
 
 #anuncio {
-  max-width: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 150vh;
   line-height: 1.2;
   word-break: break-word;
+  padding: 10px 0px;
 }
 
 #anuncio h1 {
   text-shadow: 0 4px 8px rgba(0,0,0,0.4);
-  font-size: 2.2rem;
+  font-size: 1m;
   line-height: 1.3;
 }
 
 .animate__pulse {
   --animate-duration: 2s;
 }
+
+.Titulo {
+
+  width: 500px;
+
+}
+
+.banner {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  z-index: -1;  /* 🔥 Esto hace que el video quede debajo del texto */
+}
+
+.banner video {
+  z-index: -100;
+  max-width: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
 
 /* --- ABOUT --- */
 #About {
@@ -194,7 +223,7 @@ h1, h2, h3, p {
 }
 
 section {
-  max-width: 800px;
+  
   margin: 0 auto;
   text-align: center;
   padding: 0 20px;
