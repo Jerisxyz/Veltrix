@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="Contactanos.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- CSS principal -->
@@ -16,6 +19,7 @@
   <!-- Librerías externas -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Icono y título -->
   <link rel="icon" href="images/logo.png" type="image/png">
@@ -38,44 +42,46 @@
   </header>
 
   <section id="Hero">
-    <div id="anuncio">
-        <div class="banner">
-            
-            <video autoplay muted loop playsinline>
-            <source src="images/video-anuncio.mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-            </video>
-        </div>
-   
-      <div class="Titulo">
-          <h1 class="animate__animated animate__pulse animate__infinite">
-            Impulsamos tu negocio en línea con páginas web rápidas y confiables
-          </h1>
+  
+  <!-- Texto -->
+  <div id="anuncio">
 
-      </div>
-    </div>
+    <h1 class="animate__animated animate__infinite animate__pulse">Impulsamos tu negocio en línea con<br>  
+      páginas web rápidas y confiables
+    </h1>
+  
+  </div>
+
   </section>
 
   <section id="About">
-    <h1>¿Quiénes somos?</h1>
-    <p>
-      En <span class="color-acento">Veltrix Soft</span> somos una empresa apasionada por la tecnología y el diseño web.
-      Nos especializamos en crear páginas web y tiendas virtuales modernas, rápidas y seguras que ayudan a nuestros clientes a destacar en el mundo digital.
-    </p>
+    <div class="sobrenosotros">
 
-    <h2>Algunos lenguajes que utilizamos:</h2>
-    <div class="container">
-      <img src="images/html logo.png" alt="HTML">
-      <img src="images/csslogo.png" alt="CSS">
-      <img src="images/javascriptlogo.png" alt="JavaScript">
+
+      <h1>¿Quiénes <span class="color-acento">somos</span>?</h1>
+      <p>
+        En <span class="color-acento">Veltrix Soft</span> somos una empresa apasionada por la tecnología y el diseño web.
+        Nos especializamos en crear páginas web y tiendas virtuales modernas, rápidas y seguras que ayudan a nuestros clientes a destacar en el mundo digital.
+      </p>
+    
+    
+      <h2>Algunos lenguajes que utilizamos:</h2>
+      <div class="container">
+        <img src="images/html logo.png" alt="HTML">
+        <img src="images/csslogo.png" alt="CSS">
+        <img src="images/javascriptlogo.png" alt="JavaScript">
+      </div>
+    
+    
     </div>
+
   </section>
 
   <section id="projects">
     <h1>Proyecto destacado: Tienda en línea para una clienta</h1>
 
     <div class="card">
-      <img src="captura.png" alt="Vista previa del proyecto Chocodelicias">
+      <img src="images/capturadelisabor.png" alt="Vista previa del proyecto Chocodelicias">
       <h3>
         Diseñamos y desarrollamos esta tienda virtual moderna y responsiva, optimizada para una experiencia de compra rápida y segura.
       </h3>
@@ -93,9 +99,10 @@
       <h2>
         ¿Quieres ser nuestro próximo proyecto destacado? Contáctanos y construyamos juntos tu presencia digital.
       </h2>
-      <form action="Contactanos.html">
+      <a href="https://wa.me/573178385980">
         <button class="ver-proyecto">CONTÁCTANOS</button>
-      </form>
+      </a>
+      
     </div>
   </section>
 
